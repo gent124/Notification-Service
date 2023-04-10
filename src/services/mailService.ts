@@ -8,10 +8,10 @@ export default class MailService {
   private static instance: MailService
   private mailgun: mailgun.Mailgun | null = null;
 
-  private constructor() {
+   constructor() {
   }
 
-  static getInstance() {
+   getInstance() {
     console.log('getInstance');
     if (!MailService.instance) {
       MailService.instance = new MailService();
